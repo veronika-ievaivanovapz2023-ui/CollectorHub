@@ -18,9 +18,9 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
+      # прибрали конкретну версію і залишили тільки stable
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.16.0'
           channel: 'stable'
 
       - name: Get dependencies
